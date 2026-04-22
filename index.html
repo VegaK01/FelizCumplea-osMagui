@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="mimarciana.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="welcome-screen">
+        <h1>Tengo una sorpresa para ti...</h1>
+        <button id="start-btn">Abrir Sorpresa 🎁</button>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <button id="music-toggle" class="music-btn">
+            <span id="music-icon">⏸️</span>
+        </button>
+
+        <div id="particles-background"></div>
+
+        <div class="container">
+            <header class="hero">
+                <h1 class="neon-text">¡Feliz Cumpleaños Hermosa Dama!</h1>
+                <p class="subtitle">Para una mujer excepcional y una amiga invaluable...</p>
+            </header>
+
+            <section class="gallery-section">
+                <div class="slider">
+                    <div class="slide active" style="background-image: url('img/img1.jpg');"></div>
+                    <div class="slide" style="background-image: url('img/img2.jpg');"></div>
+                    <div class="slide" style="background-image: url('img/img3.png');"></div>
+                    <div class="slide" style="background-image: url('img/img4.png');"></div>
+                </div>
+                
+                <div class="controls">
+                    <button id="prevBtn" class="nav-btn">&#10094;</button>
+                    <button id="nextBtn" class="nav-btn">&#10095;</button>
+                </div>
+            </section>
+
+            <section class="message-card">
+                <h2>Mi Querida Amiga,</h2>
+                <p id="typewriter-text"></p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
